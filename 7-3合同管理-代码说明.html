@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title></title>  
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" /> 
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+        <!-- 文字图标 文件 -->
+    <script src="js/iconfont01.js"></script>
+<style type="text/css">
+    .content-box .content-ul li{
+        width: 40%!important;
+        float: left;
+        height:32px!important;
+    }
+</style>
+</head>
+
+<body >
+
+
+        <!-- 弹窗 -->
+        <div class="mengban" ></div>
+        <div class="popup-box"  class="js_win">
+            <h1>代码说明
+                <a href="javascript:void(0)" >
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-iconfont-error"></use>
+                    </svg>
+                </a>
+            </h1>
+            <div class="content-box">
+             <p class="tips-box">合同模板需要读取订单数据，编辑时需要将各字段的代码放至到合同模板中才能正常读取</p>
+                <ul class="content-ul clearfix" >
+                    <li>供方： ${supplycompany}</li>
+                    <li>需方： ${purchascompany}</li>
+                    <li>合同编号： ${contractno}</li>
+                    <li>签订时间： ${signedY}年${signedM}月${signedD}日</li>
+                    <li>产品名称：${ptName}</li>
+                    <li>厂家：${factoryName}</li>
+                    <li>型号（规格）：${ptModlesName}</li>
+                    <li>数量（吨）：${quantity}</li>
+                    <li>含税单价（元/吨）：${salePrice}</li>
+                    <li>总金额（元）：${totalPrice}</li>
+                    <li>总金额大写：${totalPriceCapital}</li>
+                    <li>质量等级：${qualityLevel}</li>
+                    <li>支付方式：${payType} </li>
+                    <li>银行承兑汇票周期天数：${payTypeNum3} </li>
+                    <li>电子商业承兑汇票周期天数：${payTypeNum4}</li>
+                    <li>供方开户行：${supplybankName}</li>
+                    <li>供方开户账号：${supplybankAccount}</li>
+                    <li>交货方式：</li>
+                    <li>交货地点：${address}</li>
+                    <li>交货时间：${sdeliveryTimeM}  月  ${sdeliveryTimeD}  日</li>
+                    <li>结算方式：${payMethod}</li>
+                    <li>付款账期：${accountPeriodcod}</li>
+                    <li>供方公司地址：${supplyCompanyAddress}</li>
+                    <li>供方公司电话： ${supplyPhone}</li>
+                    <li>买方公司地址：${demandCompanyAddress}</li>
+                    <li>买方公司电话： ${demandPhone}</li>
+                </ul>
+                <div style="text-align:center;">
+                    <a href="javascript:void(0)" class="btn-box" style="display:inline-block;">关闭</a>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+</html>
