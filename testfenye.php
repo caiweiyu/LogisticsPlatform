@@ -37,7 +37,7 @@
 		}
 		echo "</table>";
 		$prevpage = ($pagenum-1)>0 ? $pagenum-1 : 1;
-		$nextpage = $pagenum+1;
+		$nextpage = $pagenum+1>$pagetot ? $pagetot : $pagenum+1;
 		echo "<h2><a href='testfenye.php?page={$prevpage}'>pre</a>|<a href='testfenye.php?page={$nextpage}'>next</a></h2>";
 		echo "</center>";
 		mysql_close($conn);
